@@ -93,9 +93,9 @@
         -webkit-transition: max-width 800ms, opacity 500ms;
         -moz-transition: max-width 800ms, opacity 500ms;
         transition: max-width 800ms, opacity 500ms;
-        -webkit-transition-delay: 0, 500ms;
-        -moz-transition-delay: 0, 500ms;
-        transition-delay: 0, 500ms;
+        -webkit-transition-delay: 0, 800ms;
+        -moz-transition-delay: 0, 800ms;
+        transition-delay: 0, 800ms;
       }
       .nav-box__collapsed .nav-box-item {
         max-width: 0;
@@ -188,10 +188,21 @@
         height: 0;
         overflow: hidden;
       }
+      section {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 20px 20px 10px;
+        color: #999;
+      }
     </style>
   </head>
   <body>
 
+
+    <section>
+      <p>bara "BILAFFÄREN" har en komplett meny. Försök BILAFFÄREN -> PRODUKT -> R&amp;R -> ...</p>
+    </section>
+    
     <nav>
 
       <div class="nav-box nav-box__ready js-nav-box-sub-0" data-category-level="0" data-collapsible="yes">
@@ -208,21 +219,6 @@
       <div class="clear"></div>
 
     </nav>
-
-
-    <header>
-      <h1>Vhn14-proto-meny</h1>
-      <p>Another menu prototype</p>
-
-      <p class="view"><a href="https://github.com/pixelthing/vhn14-proto-meny">View the Project on GitHub <small>pixelthing/vhn14-proto-meny</small></a></p>
-
-
-      <ul>
-        <li><a href="https://github.com/pixelthing/vhn14-proto-meny/zipball/master">Download <strong>ZIP File</strong></a></li>
-        <li><a href="https://github.com/pixelthing/vhn14-proto-meny/tarball/master">Download <strong>TAR Ball</strong></a></li>
-        <li><a href="https://github.com/pixelthing/vhn14-proto-meny">View On <strong>GitHub</strong></a></li>
-      </ul>
-    </header>
 
   <script type="app/template" id='js-template-nav-subbox'>
             <div class="nav-box js-nav-box-sub-<%= kategoriType %> js-nav-box-sub-<%= kategoriLevel %>" data-category-level="<%= kategoriLevel %>" data-collapsible="yes">
