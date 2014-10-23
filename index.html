@@ -90,22 +90,22 @@
         overflow: hidden;
         max-width: 20em;
         opacity: 1;
-        -webkit-transition: max-width 800ms, opacity 500ms;
-        -moz-transition: max-width 800ms, opacity 500ms;
-        transition: max-width 800ms, opacity 500ms;
-        -webkit-transition-delay: 0, 800ms;
-        -moz-transition-delay: 0, 800ms;
-        transition-delay: 0, 800ms;
+        -webkit-transition: max-width 500ms, opacity 500ms;
+        -moz-transition: max-width 500ms, opacity 500ms;
+        transition: max-width 500ms, opacity 500ms;
+        -webkit-transition-delay: 0, 500ms;
+        -moz-transition-delay: 0, 500ms;
+        transition-delay: 0, 500ms;
       }
       .nav-box__collapsed .nav-box-item {
         max-width: 0;
         opacity: 0;
-        -webkit-transition: max-width 800ms, opacity 300ms;
-        -moz-transition: max-width 800ms, opacity 300ms;
-        transition: max-width 800ms, opacity 300ms;
-        -webkit-transition-delay: 200ms, 0;
-        -moz-transition-delay: 200ms, 0;
-        transition-delay: 200ms, 0;
+        -webkit-transition: max-width 500ms, opacity 300ms;
+        -moz-transition: max-width 500ms, opacity 300ms;
+        transition: max-width 500ms, opacity 300ms;
+        -webkit-transition-delay: 100ms, 0;
+        -moz-transition-delay: 100ms, 0;
+        transition-delay: 100ms, 0;
       }
       .nav-box-item-link {
         position: relative;
@@ -156,11 +156,7 @@
         text-align: center;
         cursor: pointer;
         border-radius: 100%;
-        background-color: #999;
         opacity: 0;
-        -webkit-transform: rotate(-360deg);
-        -moz-transform: rotate(-360deg);
-        transform: rotate(-360deg);
         -webkit-transition: all 300ms, opacity 500ms, -webkit-transform 500ms;
         -moz-transition: all 300ms, opacity 500ms, -webkit-transform 500ms;
         transition: all 300ms, opacity 500ms, -webkit-transform 500ms;
@@ -171,16 +167,9 @@
       .nav-box-item__selected>.nav-box-item-link:after {
         right: 5px;
         opacity: 1;
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        transform: rotate(0);
         -webkit-transition-delay: 0, 900ms, 900ms;
         -moz-transition-delay: 0, 900ms, 900ms;
         transition-delay: 0, 900ms, 900ms;
-      }
-      .nav-box-item__selected:hover>.nav-box-item-link:after {
-        color: #333;
-        background-color: #fff;
       }
       /* misc */
       .clear {
@@ -455,7 +444,7 @@
                 // mark it as ready
                 setTimeout(function() {
                   document.querySelector('.js-nav-box-sub-' + kategoriType).classList.add('nav-box__ready')
-                },1100);
+                },700);
               }          
             }
           }
